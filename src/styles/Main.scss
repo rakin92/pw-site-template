@@ -1,4 +1,9 @@
-@import './Color.scss';
+// External min libs
+@import './bootstrap.min.css';
+@import './ionicons.min.css';
+
+@import './Variables.scss';
+@import './Fonts.scss';
 @import './Carousel.scss';
 @import './Linea.scss';
 @import './Popup.scss';
@@ -45,8 +50,6 @@
 /*=================================================================================
 	General Styles
 =================================================================================*/
-@import url(https://fonts.googleapis.com/css?family=Poppins:400,700,600,500,300);
-
 * {
   font-family: $font_family_1;
 }

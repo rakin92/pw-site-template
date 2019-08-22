@@ -59,6 +59,7 @@ export class App extends React.Component {
           <a href="#menu"
             onClick={this.toggleMenu}
             className="menu-btn"
+            aria-label="Menu"
           >
             <span className="lines">
               <span className="l1"></span>
