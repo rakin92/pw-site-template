@@ -14,36 +14,39 @@ if ('function' === typeof importScripts) {
       blacklist: [/^\/_/, /\/[^\/]+\.[^\/]+$/],
     });
 
+    // Cache images
     workbox.routing.registerRoute(
-      /\.(?:js|html)$/,
-      workbox.strategies.networkFirst()
-    )
-
-    workbox.routing.registerRoute(
-      'http://localhost:3000',
-      workbox.strategies.networkFirst()
-    )
-
-    workbox.routing.registerRoute(
-      // Cache CSS files.
-      /\.css$/,
-      // Use cache but update in the background.
-      new workbox.strategies.StaleWhileRevalidate({
-        // Use a custom cache name.
-        cacheName: 'css-cache',
-      })
-    );
-
-    workbox.routing.registerRoute(
-      /\.(?:png|gif|jpg|jpeg|svg|woff|ico|woff2|tff|eot)$/,
-      workbox.strategies.cacheFirst({
+      /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
+      new workbox.strategies.CacheFirst({
         cacheName: 'images',
         plugins: [
           new workbox.expiration.Plugin({
-            maxEntries: 60,
-            maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+            maxEntries: 80,
+            maxAgeSeconds: 30 * 24 * 60 * 60 * 10, // 90 Days
           }),
         ],
+      })
+    );
+
+    // Cache fonts
+    workbox.routing.registerRoute(
+      /\.(?:woff|ico|woff2|tff|eot)$/,
+      new workbox.strategies.CacheFirst({
+        cacheName: 'fonts',
+        plugins: [
+          new workbox.expiration.Plugin({
+            maxEntries: 80,
+            maxAgeSeconds: 30 * 24 * 60 * 60 * 10, // 90 Days
+          }),
+        ],
+      })
+    );
+
+    // Cache JS and CSS, use cache and update on the background
+    workbox.routing.registerRoute(
+      /\.(?:js|css|html)$/,
+      new workbox.strategies.StaleWhileRevalidate({
+        cacheName: 'static-resources',
       })
     );
 
