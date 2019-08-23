@@ -1,6 +1,8 @@
 import React from 'react';
+
 import BlogPreview from './BlogPreview';
 import Image1 from './img/1.jpg';
+import './Blog.scss';
 
 class Blog extends React.PureComponent {
 

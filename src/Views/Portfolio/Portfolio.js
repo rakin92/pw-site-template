@@ -1,9 +1,11 @@
 import React from 'react';
+
 import Filter from './Filter';
 import Projects from './Projects';
 import Popup from './Popup';
-
 import Image1 from './img/1.jpg';
+import './Portfolio.scss';
+
 
 const PROJECTS = [
   { id: 0, title: 'Some Title', description: 'Some description', image: Image1, type: ['WEB'] },

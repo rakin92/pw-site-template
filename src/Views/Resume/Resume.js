@@ -2,6 +2,8 @@ import React from 'react';
 import Timeline from './Timeline';
 import Testimonials from './Testimonial'
 
+import './Resume.scss';
+
 const EDUCATIONS = [
   { name: 'CSS College', degree: 'Masters', year: '2014 to 2016', description: 'Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed.' },
   { name: 'CSS College', degree: 'Masters', year: '2014 to 2016', description: 'Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed.' },

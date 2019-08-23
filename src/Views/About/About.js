@@ -1,8 +1,10 @@
 import React from "react";
+
 import Skills from './Skills';
 import Services from './Services';
 import Pricing from './Pricing';
 import Info from './Info';
+import './About.scss';
 
 function About() {
 

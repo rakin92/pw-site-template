@@ -1,21 +1,13 @@
 import React from 'react';
+
+import Nav from './Component/Nav/Nav';
+import Routes from './Routes';
+
 import './styles/Main.scss';
 
-import Loader from './Component/Loader/Loader';
-import Nav from './Component/Nav/Nav';
-
-import Home from './Views/Home/Home';
-import Blog from './Views/Blog/Blog';
-import Contact from './Views/Contact/Contact';
-import Portfolio from './Views/Portfolio/Portfolio';
-import About from './Views/About/About';
-import Resume from './Views/Resume/Resume';
-
-export class App extends React.Component {
+export class App extends React.PureComponent {
   state = {
-    loading: false,
     showMenue: false,
-    active: 'HOME',
   };
 
   toggleMenu = () => {
@@ -25,38 +17,16 @@ export class App extends React.Component {
 
   setActiveMenue = (active) => this.setState({active, showMenue: false});
 
-  renderSections = () => {
-    const { active } = this.state;
-
-    switch (active) {
-      case 'HOME':
-        return <Home />
-      case 'ABOUT':
-        return <About />
-      case 'BLOG':
-        return <Blog />
-      case 'CONTACT':
-        return <Contact />
-      case 'PORTFOLIO':
-        return <Portfolio />
-      case 'RESUME':
-        return <Resume />
-      default:
-        return <Home />
-    }
-  }
-
   render = () => {
-    const { loading, showMenue } = this.state;
+    const { showMenue } = this.state;
 
     return(
       <div className={showMenue ? 'show-menu' : 'hide-menu'}>
-        {loading && <Loader />}
 
         <div className="bg"></div>
 
         <div className="main-content">
-          <a href="#menu"
+          <button
             onClick={this.toggleMenu}
             className="menu-btn"
             aria-label="Menu"
@@ -66,10 +36,12 @@ export class App extends React.Component {
               <span className="l2"></span>
               <span className="l3"></span>
             </span>
-          </a>
+          </button>
           
           <Nav setActiveMenue={this.setActiveMenue} />
-          {this.renderSections()}
+          
+          <Routes />
+
         </div>
       </div>);
   };

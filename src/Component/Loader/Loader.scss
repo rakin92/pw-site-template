@@ -1,0 +1,44 @@
+$color_1: rgba(0, 0, 0, 0.45);
+$color_2: #FFF;
+
+/*=================================================================================
+	Preloader
+=================================================================================*/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: $color_2;
+  z-index: 999;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  > .loader {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    > span {
+      display: block;
+      margin-top: 25px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 10px;
+      font-weight: bold;
+      color: $color_1;
+    }
+  }
+}
+
+.no-js #preloader {
+  display: none;
+}

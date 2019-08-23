@@ -1,18 +1,18 @@
 import React from 'react';
 
 const NavItems = [
-  { label: 'Home', icon: 'ion-ios-home-outline', value: 'HOME' },
-  { label: 'About', icon: 'ion-ios-person-outline', value: 'ABOUT' },
-  { label: 'Resume', icon: 'ion-ios-book-outline', value: 'RESUME' },
-  { label: 'Portfolio', icon: 'ion-ios-briefcase-outline', value: 'PORTFOLIO' },
-  { label: 'Blog', icon: 'icon-basic-sheet-txt', value: 'BLOG' },
-  { label: 'Contact', icon: 'ion-ios-email-outline', value: 'CONTACT' },
+  { label: 'Home', icon: 'ion-ios-home-outline', value: 'home' },
+  { label: 'About', icon: 'ion-ios-person-outline', value: 'about' },
+  { label: 'Resume', icon: 'ion-ios-briefcase-outline', value: 'resume' },
+  { label: 'Portfolio', icon: 'ion-ios-albums-outline', value: 'portfolio' },
+  { label: 'Blog', icon: 'ion-ios-book-outline', value: 'blog' },
+  { label: 'Contact', icon: 'ion-ios-email-outline', value: 'contact' },
 ]
 
-function Nav({setActiveMenue}) {
+function Nav() {
   const menu = NavItems.map((item, index) => (
     <li key={index}>
-      <a href={`#${item.value}`} onClick={() => setActiveMenue(item.value)}>
+      <a href={`/${item.value}`}>
         <i className={item.icon}></i>
         <span>{item.label}</span>
       </a>
