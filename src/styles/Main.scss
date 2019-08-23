@@ -23,9 +23,9 @@
 	
 	04. Main Section
 	
-	05. Responsive CSS
-	
-	COLORS ARE INCLUDED IN SEPARATE FILES
+  05. Responsive CSS
+  
+  06. Theme CSS
 	
 =================================================================================*/
 
@@ -169,6 +169,7 @@ img {
   width: 64px;
   line-height: 64px;
   border-radius: 50%;
+  border-style: none;
   background: $color_7;
   -webkit-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.18);
@@ -580,9 +581,6 @@ a.btn-material {
 }
 
 @media (max-width: 992px) {
-  .posts-grid > .blog-post, .project-items > li {
-    width: 50%;
-  }
   .intro-text {
     padding: 0;
     -webkit-transform: none;
@@ -671,12 +669,6 @@ a.btn-material {
   }
 }
 
-@media (max-width: 768px) {
-  .posts-grid > .blog-post, .project-items > li {
-    width: 100%;
-  }
-}
-
 @media (max-width: 600px) {
   .main-content {
     top: 0;
@@ -734,8 +726,6 @@ a.btn-material {
   }
 }
 
-/* just add that code to your style.css file to apply changes */
-
 .section {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-backface-visibility: hidden;
@@ -743,4 +733,37 @@ a.btn-material {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
+}
+
+/*=================================================================================
+	Theme CSS
+=================================================================================*/
+::-webkit-scrollbar-thumb:hover{
+	background:$color_blue;
+}
+.timeline > li > .timeline-content:before,
+.bg,
+.menu-btn,
+.menu-items > ul > li > a:hover > i,
+.btn-material,
+.skill > .skill-bar > .percent,
+.owl-dots > .owl-dot.active > span{
+	background:$color_red;
+}
+.portfolio-items > li > .inner > .overlay > a:hover,
+.contact-info > i,
+.portfolio-filters > li > a.active,
+.portfolio-filters > li > a:hover,
+.testimonial > .icon,
+.timeline > li > .timeline-content > span,
+.btn-material.btn-secondary:hover,
+.intro-text > span{
+	color:$color_red;
+}
+.form-control:focus,
+.timeline > li > .timeline-content,
+.timeline > li:before,
+.btn-material.btn-secondary:hover,
+.btn-material{
+	border-color:$color_red;
 }
