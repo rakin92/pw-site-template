@@ -1,5 +1,7 @@
 import React from 'react';
+
 import Person from './person.png';
+import './Home.scss';
 
 function Home() {
   return (

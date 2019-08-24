@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Menu.scss';
+
 const NavItems = [
   { label: 'Home', icon: 'ion-ios-home-outline', value: 'home' },
   { label: 'About', icon: 'ion-ios-person-outline', value: 'about' },
@@ -9,7 +11,7 @@ const NavItems = [
   { label: 'Contact', icon: 'ion-ios-email-outline', value: 'contact' },
 ]
 
-function Nav() {
+function Menu() {
   const menu = NavItems.map((item, index) => (
     <li key={index}>
       <a href={`/${item.value}`}>
@@ -20,8 +22,8 @@ function Nav() {
   ))
 
   return (
-    <div className='menu'>
-      <nav className='menu-items'>
+    <div className="menu">
+      <nav className="menu-items">
         <ul>
           {menu}
         </ul>
@@ -30,4 +32,4 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Menu;

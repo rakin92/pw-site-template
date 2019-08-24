@@ -26,6 +26,7 @@ function Resume() {
       <div className='container-fluid'>
 
         <Timeline label="Education" description="Take a look at the places where I've studied" list={EDUCATIONS}/>
+        <br /><br />
         <Timeline label="Experience" description="Take a look at the places where I've worked" list={EXPERIENCES} />
         <Testimonials label="Testimonial" description="Take a look at what other people say about me" list={TESTIMONIALS} />
 

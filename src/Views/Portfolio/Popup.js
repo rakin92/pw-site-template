@@ -20,6 +20,8 @@ function Popup({show, onClose, project}){
       className="mfp-bg my-mfp-zoom-in mfp-ready"
       isOpen={show}
       onRequestClose={onClose}
+      onFocus={show}
+      readonly
     >
       <div className="mfp-wrap mfp-close-btn-in mfp-auto-cursor my-mfp-zoom-in mfp-ready" style={customStyle}>
         <div className="mfp-container mfp-inline-holder">

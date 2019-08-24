@@ -1,6 +1,7 @@
 import React from 'react';
 
-import Nav from './Component/Nav/Nav';
+import Nav from './Component/Menu/Menu';
+import MenuButton from './Component/MenuButton/MenuButton';
 import Routes from './Routes';
 
 import './styles/Main.scss';
@@ -26,17 +27,7 @@ export class App extends React.PureComponent {
         <div className="bg"></div>
 
         <div className="main-content">
-          <button
-            onClick={this.toggleMenu}
-            className="menu-btn"
-            aria-label="Menu"
-          >
-            <span className="lines">
-              <span className="l1"></span>
-              <span className="l2"></span>
-              <span className="l3"></span>
-            </span>
-          </button>
+          <MenuButton toggleMenu={this.toggleMenu} />
           
           <Nav setActiveMenue={this.setActiveMenue} />
           

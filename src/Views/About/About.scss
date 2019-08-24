@@ -202,3 +202,30 @@ $color_4: #009688;
     }
   }
 }
+
+/*=================================================================================
+	Responsive CSS
+=================================================================================*/
+
+@media (max-width: 992px) {
+  .info-list, .service {
+    margin-bottom: 30px;
+  }
+  .p-table {
+    margin-bottom: 30px;
+  }
+  .skill:last-of-type {
+    margin-bottom: 40px;
+  }
+  div:last-of-type > {
+    .skill:last-of-type, .service:last-of-type, .p-table:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .p-table > .header > .price > .amount {
+    font-size: 70px;
+  }
+}

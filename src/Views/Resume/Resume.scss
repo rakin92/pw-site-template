@@ -164,3 +164,19 @@ $color_3: #009688;
     }
   }
 }
+
+/*=================================================================================
+	Responsive CSS
+=================================================================================*/
+
+@media (max-width: 600px) {
+  .testimonial > .icon {
+    display: none;
+  }
+  .owl-controls {
+    margin-left: 3px;
+  }
+  .testimonial > .content {
+    margin: 3px;
+  }
+}

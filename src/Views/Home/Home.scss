@@ -1,0 +1,177 @@
+$color_1: #727272;
+$color_2: rgba(0, 0, 0, 0.45);
+$color_3: #009688;
+
+/*=================================================================================
+	Home Section
+=================================================================================*/
+
+.main-section {
+  overflow: visible;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  > .row {
+    height: 100%;
+    position: relative;
+    > div {
+      height: 100%;
+      position: relative;
+    }
+  }
+}
+
+.person-img {
+  position: absolute;
+  bottom: 0;
+  top: -55px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 44;
+  > img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.text-col-main {
+  overflow: auto;
+  height: 100%;
+}
+
+.intro-text-col {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: table;
+  overflow-y: auto;
+  > .inner {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    display: table-cell;
+  }
+}
+
+.intro-text {
+  padding: 60px 100px;
+  padding-left: 0;
+  > {
+    h1 {
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 1.4em;
+      margin: 0;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    span {
+      font-size: 16px;
+      color: $color_3;
+      font-weight: 300;
+    }
+    p {
+      font-size: 16px;
+      color: $color_1;
+      color: $color_2;
+      margin: 0;
+      font-weight: 500;
+      margin-top: 35px;
+      line-height: 1.7em;
+    }
+    .intro-btns {
+      margin-top: 35px;
+      > .btn-material {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+/*=================================================================================
+	Responsive CSS
+=================================================================================*/
+
+@media (max-width: 1024px) {
+  .intro-text {
+    padding: 60px 80px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro-text {
+    padding: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  .main-section {
+    > .row {
+      height: auto;
+      > div {
+        height: auto;
+      }
+    }
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 80px;
+  }
+  .main-section:after {
+    height: 80px;
+  }
+  .intro-text > {
+    p {
+      margin-bottom: 40px;
+    }
+    .intro-btns > .btn-material {
+      margin: 0;
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+  .intro-text-col {
+    display: block;
+    height: auto;
+  }
+  .person-img {
+    position: relative;
+    top: 0;
+    height: auto;
+    text-align: center;
+    background: #F0F0F0;
+    padding: 80px 125px;
+    padding-bottom: 0;
+    margin: -100px;
+    margin-bottom: 100px;
+    > img {
+      position: static;
+      height: auto;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .section, .main-section {
+    padding: 50px;
+    padding-bottom: 0;
+  }
+  .section:after, .main-section:after {
+    height: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section, .main-section {
+    padding: 35px 20px;
+    padding-bottom: 0;
+  }
+  .section:after, .main-section:after {
+    height: 35px;
+  }
+}
