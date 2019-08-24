@@ -1,7 +1,7 @@
 $color_1: rgba(0, 0, 0, 0.45);
 $color_2: #B6B6B6;
 $color_3: #FFF;
-$color_4: #009688;
+$color_4: #F44336;
 
 /*=================================================================================
 	Contact Section
@@ -34,6 +34,16 @@ $color_4: #009688;
       margin-bottom: 0;
       font-weight: 500;
       line-height: 1.8em;
+    }
+    a {
+      color: $color_4;
+      float: left;
+      font-size: 16px;
+      margin-top: 18px;
+      margin-bottom: 0;
+      font-weight: 500;
+      line-height: 1.8em;
+      text-decoration: none;
     }
   }
 }

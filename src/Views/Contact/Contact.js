@@ -15,7 +15,33 @@ function Contact() {
           </div>
           
           <div className="row">
-            
+            <div className="col-md-4 col-xs-12">
+              <div className="contact-info-icons">
+
+                <div className="contact-info">
+                  <i className="ion-ios-location-outline"></i>
+                  <p>
+                    1254 Patterson Street<br />
+                    Houston, TX 77025
+                  </p>
+                </div>
+
+                <div className="contact-info">
+                  <i className="ion-ios-telephone-outline"></i>
+                  <p>
+                    (+123) 713-295-4383
+                  </p>
+                </div>
+
+                <div className="contact-info">
+                  <i className="ion-android-globe"></i>
+                  <a href="#link">www.google.com <i className="ion-ios-paperplane"></i></a>
+                </div>
+
+              </div>
+
+            </div>
+
             <div className="col-md-8 col-xs-12">
               
               <form className="contact-form" id="contact-form" method="post" data-toggle="validator">
@@ -69,34 +95,6 @@ function Contact() {
               
             </div>
             
-            <div className="col-md-4 col-xs-12">
-              <div className="contact-info-icons">
-
-                <div className="contact-info">
-                  <i className="ion-ios-location-outline"></i>
-                  <p>
-                    1254 Patterson Street<br />
-                    Houston, TX 77025
-                  </p>
-                </div>
-
-                <div className="contact-info">
-                  <i className="ion-ios-telephone-outline"></i>
-                  <p>
-                    (+123) 713-295-4383
-                  </p>
-                </div>
-
-                <div className="contact-info">
-                  <i className="ion-android-globe"></i>
-                  <p>
-                    www.google.com
-                  </p>
-                </div>
-
-              </div>
-
-            </div>
           </div>
           
         </div>
