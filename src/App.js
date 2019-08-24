@@ -2,13 +2,20 @@ import React from 'react';
 
 import Nav from './Component/Menu/Menu';
 import MenuButton from './Component/MenuButton/MenuButton';
-import Routes from './Routes';
-
 import './styles/Main.scss';
+
+import Home from './Views/Home/Home';
+import Blog from './Views/Blog/Blog';
+import Contact from './Views/Contact/Contact';
+import Portfolio from './Views/Portfolio/Portfolio';
+import About from './Views/About/About';
+import Resume from './Views/Resume/Resume';
+
 
 export class App extends React.PureComponent {
   state = {
     showMenue: false,
+    active: 'home'
   };
 
   toggleMenu = () => {
@@ -16,7 +23,28 @@ export class App extends React.PureComponent {
     this.setState({ showMenue: !showMenue });
   }
 
-  setActiveMenue = (active) => this.setState({active, showMenue: false});
+  renderSections = () => {
+    const { active } = this.state;
+
+    switch (active) {
+      case 'home':
+        return <Home />
+      case 'about':
+        return <About />
+      case 'blog':
+        return <Blog />
+      case 'contact':
+        return <Contact />
+      case 'portfolio':
+        return <Portfolio />
+      case 'resume':
+        return <Resume />
+      default:
+        return <Home />
+    }
+  }
+
+  navigateTo = (active) => this.setState({active, showMenue: false});
 
   render = () => {
     const { showMenue } = this.state;
@@ -29,9 +57,9 @@ export class App extends React.PureComponent {
         <div className="main-content">
           <MenuButton toggleMenu={this.toggleMenu} />
           
-          <Nav setActiveMenue={this.setActiveMenue} />
+          <Nav navigateTo={this.navigateTo} />
           
-          <Routes />
+          {this.renderSections()}
 
         </div>
       </div>);

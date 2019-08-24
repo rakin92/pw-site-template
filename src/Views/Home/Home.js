@@ -7,12 +7,12 @@ function Home() {
   return (
     <section id="home" className="section main-section active">
       <div className="row">
-        <div className="col-lg-6 col-md-6 col-xs-12 img-col-main">
+        <div className="col-lg-6 col-md-12 col-xs-12 img-col-main">
           <div className="person-img">
             <img src={Person} alt="" />
           </div>
         </div>
-        <div className="col-lg-6 col-md-6 col-xs-12 text-col-main">
+        <div className="col-lg-6 col-md-12 col-xs-12 text-col-main">
           <div className="intro-text-col">
             <div className="inner">
 

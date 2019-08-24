@@ -1,7 +1,7 @@
 $color_1: #727272;
 $color_2: rgba(0, 0, 0, 0.45);
 $color_3: #FFF;
-$color_4: #009688;
+$color_4: #F44336;
 $color_5: rgba(0, 0, 0, 0.4);
 
 /*=================================================================================
@@ -103,6 +103,7 @@ $color_5: rgba(0, 0, 0, 0.4);
       transform: translate(-50%, -50%);
       text-decoration: none;
       font-weight: bold;
+      font-size: 0.75rem;
       display: inline-block;
       *display: inline;
       *zoom: 1;

@@ -11,13 +11,13 @@ const NavItems = [
   { label: 'Contact', icon: 'ion-ios-email-outline', value: 'contact' },
 ]
 
-function Menu() {
+function Menu({ navigateTo }) {
   const menu = NavItems.map((item, index) => (
     <li key={index}>
-      <a href={`/${item.value}`}>
+      <button aria-label={item.value} onClick={() => navigateTo(item.value)}>
         <i className={item.icon}></i>
         <span>{item.label}</span>
-      </a>
+      </button>
     </li>
   ))
 
