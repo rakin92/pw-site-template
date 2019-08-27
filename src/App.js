@@ -11,16 +11,27 @@ import Portfolio from './Views/Portfolio/Portfolio';
 import About from './Views/About/About';
 import Resume from './Views/Resume/Resume';
 
-
+let deferredPrompt;
 export class App extends React.PureComponent {
   state = {
-    showMenue: false,
-    active: 'home'
+    menuStatus: 'hide',
+    active: 'home',
   };
 
+  componentDidMount = () => {
+    window.addEventListener('beforeinstallprompt', (e) => {
+      // Stash the event so it can be triggered later.
+      deferredPrompt = e;
+      // Update UI notify the user they can add to home screen
+      console.log('ADD TO HOME SCREE');
+
+    });
+  }
+
   toggleMenu = () => {
-    const { showMenue } = this.state;
-    this.setState({ showMenue: !showMenue });
+    const { menuStatus } = this.state;
+
+    this.setState({ menuStatus: menuStatus === 'hide' ? 'show' : 'hide' });
   }
 
   renderSections = () => {
@@ -31,26 +42,26 @@ export class App extends React.PureComponent {
         return <Home />
       case 'about':
         return <About />
+      case 'resume':
+        return <Resume />
+      case 'portfolio':
+        return <Portfolio />
       case 'blog':
         return <Blog />
       case 'contact':
         return <Contact />
-      case 'portfolio':
-        return <Portfolio />
-      case 'resume':
-        return <Resume />
       default:
         return <Home />
     }
   }
 
-  navigateTo = (active) => this.setState({active, showMenue: false});
+  navigateTo = (active) => this.setState({ active, menuStatus: 'hide'});
 
   render = () => {
-    const { showMenue } = this.state;
+    const { menuStatus } = this.state;
 
     return(
-      <div className={showMenue ? 'show-menu' : 'hide-menu'}>
+      <div className={`${menuStatus}-menu`}>
 
         <div className="bg"></div>
 

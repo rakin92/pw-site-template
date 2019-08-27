@@ -1,6 +1,14 @@
 import React from 'react';
 
+import Social from './Social';
+import ContactForm from './ContactForm';
 import './Contact.scss';
+
+const platforms = [
+  { id: 0, icon: 'ion-ios-location-outline', text: 'Greater New York Area, New York', url: 'some url' },
+  { id: 1, icon: 'ion-social-instagram-outline', text: 'RAK1NONLY', url: 'https://instagram.com/rak1nonly' },
+  { id: 2, icon: 'ion-ios-telephone-outline', text: '+1 (800) DONT - CALL', url: 'telephone:+180036682255' }
+]
 
 function Contact() {
   return(
@@ -15,85 +23,9 @@ function Contact() {
           </div>
           
           <div className="row">
-            <div className="col-md-4 col-xs-12">
-              <div className="contact-info-icons">
+            <Social platforms={platforms} />
 
-                <div className="contact-info">
-                  <i className="ion-ios-location-outline"></i>
-                  <p>
-                    1254 Patterson Street<br />
-                    Houston, TX 77025
-                  </p>
-                </div>
-
-                <div className="contact-info">
-                  <i className="ion-ios-telephone-outline"></i>
-                  <p>
-                    (+123) 713-295-4383
-                  </p>
-                </div>
-
-                <div className="contact-info">
-                  <i className="ion-android-globe"></i>
-                  <a href="#link">www.google.com <i className="ion-ios-paperplane"></i></a>
-                </div>
-
-              </div>
-
-            </div>
-
-            <div className="col-md-8 col-xs-12">
-              
-              <form className="contact-form" id="contact-form" method="post" data-toggle="validator">
-                
-                <div id="contact-form-result"></div>
-                
-                <div className="row">
-                  
-                  <div className="col-md-6">
-                    
-                    <div className="form-group">
-                      <input type="text" className="form-control" name="name" aria-label="sender name" placeholder="Name" data-error="Please fill out this field." required/>
-                      <div className="help-block with-errors"></div>
-                    </div>
-                    
-                  </div>
-                  <div className="col-md-6">
-                    
-                    <div className="form-group">
-                      <input type="email" className="form-control" name="email" aria-label="sender email" data-error="Please enter a valid email address." placeholder="Email" required/>
-                      <div className="help-block with-errors"></div>
-                    </div>
-                    
-                  </div>
-                  
-                </div>
-                
-                <div className="form-group">
-                  
-                  <input type="text" className="form-control" name="subject" aria-label="email subject" placeholder="Subject" required/>
-                  <div className="help-block with-errors"></div>
-                
-                </div>
-                
-                <div className="form-group">
-                  
-                  <textarea className="form-control" placeholder="Message" aria-label="email message" name="message" rows="6" required></textarea>
-                  <div className="help-block with-errors"></div>
-                
-                </div>
-                
-                <div className="form-group text-center">
-                  
-                  <button type="submit" className="btn-material">
-                    Send Message
-                  </button>
-                
-                </div>
-                
-              </form>
-              
-            </div>
+            <ContactForm />
             
           </div>
           

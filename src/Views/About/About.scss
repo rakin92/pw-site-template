@@ -223,6 +223,12 @@ $color_3: #FFF;
   }
 }
 
+@media (width: 768px) {
+  .service > p {
+    font-size: 0.6rem;
+  }
+}
+
 @media (max-width: 400px) {
   .p-table > .header > .price > .amount {
     font-size: 70px;

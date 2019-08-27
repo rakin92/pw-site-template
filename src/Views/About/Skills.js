@@ -1,15 +1,15 @@
 import React from "react";
 
 const SKILLS = [
-  { label: 'HTML/CSS', percent: '80%' },
-  { label: 'jQuery', percent: '80%' },
-  { label: 'PHP', percent: '70%' },
+  { label: 'Frontend', percent: '90%' },
+  { label: 'Backend', percent: '80%' },
+  { label: 'DevOps', percent: '70%' },
 ]
 
 const SKILLS_2 = [
-  { label: 'HTML/CSS', percent: '80%' },
-  { label: 'jQuery', percent: '80%' },
-  { label: 'PHP', percent: '70%' },
+  { label: 'UI/UX', percent: '90%' },
+  { label: 'System Design', percent: '80%' },
+  { label: 'Managing', percent: '70%' },
 ]
 
 function Skills() {

@@ -18,12 +18,12 @@ function Home() {
 
               <div className="intro-text">
 
-                <h1>I’m John Doe</h1>
+                <h1>I’m Rakin</h1>
 
-                <span>A friend, buddy and dude from earth</span>
+                <span>An Avid Full-Stack Engineer</span>
 
                 <p>
-                  Euismod consulatu eos eu. Vocent facilis sensibus vel ut, quo an nihil qualisque. Mea eu nulla prompta. Dicat velit at usum, malis euismod vim an
+                  Hailing from the New York City area, I enjoy working on new projects, writing codes, traveling, playing sports, watching the New Yrok Giants.
                 </p>
 
                 <div className="intro-btns">

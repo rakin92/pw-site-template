@@ -159,53 +159,6 @@ $color_5: rgba(0, 0, 0, 0.4);
   &.mfp-ready.mfp-bg {
     opacity: 1;
   }
-  &.mfp-removing.mfp-bg {
-    opacity: 0;
-  }
-}
-
-.my-mfp-slide-bottom {
-  .zoom-anim-dialog {
-    opacity: 0;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-    -webkit-transform: translateY(-20px) perspective(600px) rotateX(10deg);
-    -moz-transform: translateY(-20px) perspective(600px) rotateX(10deg);
-    -ms-transform: translateY(-20px) perspective(600px) rotateX(10deg);
-    -o-transform: translateY(-20px) perspective(600px) rotateX(10deg);
-    transform: translateY(-20px) perspective(600px) rotateX(10deg);
-  }
-  &.mfp-ready .zoom-anim-dialog {
-    opacity: 1;
-    -webkit-transform: translateY(0) perspective(600px) rotateX(0);
-    -moz-transform: translateY(0) perspective(600px) rotateX(0);
-    -ms-transform: translateY(0) perspective(600px) rotateX(0);
-    -o-transform: translateY(0) perspective(600px) rotateX(0);
-    transform: translateY(0) perspective(600px) rotateX(0);
-  }
-  &.mfp-removing .zoom-anim-dialog {
-    opacity: 0;
-    -webkit-transform: translateY(-10px) perspective(600px) rotateX(10deg);
-    -moz-transform: translateY(-10px) perspective(600px) rotateX(10deg);
-    -ms-transform: translateY(-10px) perspective(600px) rotateX(10deg);
-    -o-transform: translateY(-10px) perspective(600px) rotateX(10deg);
-    transform: translateY(-10px) perspective(600px) rotateX(10deg);
-  }
-  &.mfp-bg {
-    opacity: 0;
-    -webkit-transition: opacity 0.3s ease-out;
-    -moz-transition: opacity 0.3s ease-out;
-    -o-transition: opacity 0.3s ease-out;
-    transition: opacity 0.3s ease-out;
-  }
-  &.mfp-ready.mfp-bg {
-    opacity: 0.8;
-  }
-  &.mfp-removing.mfp-bg {
-    opacity: 0;
-  }
 }
 
 .mfp-container {
@@ -253,6 +206,15 @@ $color_5: rgba(0, 0, 0, 0.4);
           font-size: 14px;
           color: $color_2;
           font-weight: 500;
+        }
+      }
+      .links {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+          text-decoration: none;
+          color: $color_4;
         }
       }
     }

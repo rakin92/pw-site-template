@@ -9,12 +9,14 @@ const customStyle = {
 
 Popup.propTypes = {
   onClose: PropTypes.func.isRequired,
-  show: PropTypes.bool.isRequired
+  show: PropTypes.bool.isRequired,
+  project: PropTypes.object,
 };
 
 Modal.setAppElement('#root');
 
 function Popup({show, onClose, project}){
+
   return (
     <Modal
       className="mfp-bg my-mfp-zoom-in mfp-ready"
@@ -23,10 +25,10 @@ function Popup({show, onClose, project}){
       onFocus={show}
       readonly
     >
-      <div className="mfp-wrap mfp-close-btn-in mfp-auto-cursor my-mfp-zoom-in mfp-ready" style={customStyle}>
-        <div className="mfp-container mfp-inline-holder">
+      <div className="mfp-wrap mfp-close-btn-in mfp-auto-cursor" style={customStyle}>
+        <div className="mfp-container">
           <div className="mfp-content">
-            <div id="popup-project" className="popup-box zoom-anim-dialog">
+            <div id="popup-project" className="popup-box">
 
               <figure>
                 <img src={project.image} alt="" />
@@ -36,6 +38,16 @@ function Popup({show, onClose, project}){
                 <p>
                   {project.description}
                 </p>
+                <div className="links">
+                  {project.github &&
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <i className="ion-social-github-outline" /> Source Code
+                    </a>}
+                  {project.demo &&
+                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                    <i className="ion-play" /> Preview
+                    </a>}
+                </div>
               </div>
 
               <button title="Close (Esc)" type="button" className="mfp-close" onClick={onClose}>×</button>

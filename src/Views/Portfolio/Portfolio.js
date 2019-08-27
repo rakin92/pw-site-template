@@ -3,16 +3,22 @@ import React from 'react';
 import Filter from './Filter';
 import Projects from './Projects';
 import Popup from './Popup';
-import Image1 from './img/1.jpg';
+import lambdaImg from './img/awslambda.jpg';
+import golangImg from './img/golang.jpg';
+import pythonImg from './img/python.jpg';
+import reactjsImg from './img/reactjs.jpg';
+import dockerImg from './img/docker.jpg';
+import kubeImg from './img/kube.jpg';
 import './Portfolio.scss';
 
 
 const PROJECTS = [
-  { id: 0, title: 'Some Title', description: 'Some description', image: Image1, type: ['WEB'] },
-  { id: 1, title: 'Some Title', description: 'Some description', image: Image1, type: ['WEB'] },
-  { id: 2, title: 'Some Title', description: 'Some description', image: Image1, type: ['APP'] },
-  { id: 3, title: 'Some Title', description: 'Some description', image: Image1, type: ['APP'] },
-  { id: 4, title: 'Some Title', description: 'Some description', image: Image1, type: ['WEB', 'APP'] },
+  { id: 0, title: 'Weather App', description: 'A simple weather app built using Open Weather Map api and javascript.', image: reactjsImg, type: ['JS'], github: 'https://github.com/rakin92/weatherapp' },
+  { id: 1, title: 'Go & GQL', description: 'A simple starter api service built with GoLang, GraphQL (gqlgen), GORM, and Gin.', image: golangImg, type: ['GO'], github: 'https://github.com/rakin92/go-gql-starter' },
+  { id: 2, title: 'AWS SAM CLI', description: 'An AWS Lambda starter kit to handle aws events built with sam-cli in go.', image: lambdaImg, type: ['GO'], github: 'https://github.com/rakin92/go-sam-lambda-starter' },
+  { id: 3, title: 'Cucumber BDT', description: 'A Bevior Driven Testing starter kit built with cucumber, python and selinium.', image: pythonImg, type: ['PYTHON'], github: 'https://github.com/rakin92/python-cucumber-bdt' },
+  { id: 4, title: 'Docker Samples', description: 'Some quick docker samples for your everyday projects started.', image: dockerImg, type: ['DEVOPS', 'GO', 'JS'], github: 'https://github.com/rakin92/python-cucumber-bdt' },
+  { id: 6, title: 'Kubernetes Samples', description: 'Some quick kubernetes samples get your projects out to production.', image: kubeImg, type: ['DEVOPS'], github: 'https://github.com/rakin92/python-cucumber-bdt' },
 ];
 
 class Portfolio extends React.PureComponent {
@@ -21,8 +27,10 @@ class Portfolio extends React.PureComponent {
     showPopup: false,
     project: {},
     filters: [
-      { id: 0, name: 'APP', active: true },
-      { id: 1, name: 'WEB', active: true },
+      { id: 0, name: 'GO', active: true },
+      { id: 1, name: 'JS', active: true },
+      { id: 2, name: 'PYTHON', active: true },
+      { id: 3, name: 'DEVOPS', active: true },
     ],
     projects: PROJECTS,
   };
@@ -45,9 +53,8 @@ class Portfolio extends React.PureComponent {
     this.setState({ filters, projects });
   };
 
-  projectToggle = (project) => {
+  projectToggle = project =>
     this.setState({ showPopup: true, project });
-  };
 
   onClose = () => {
     this.setState({ showPopup: false, project: {} });

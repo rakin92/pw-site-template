@@ -1,9 +1,9 @@
 import React from "react";
 
 const SERVICES = [
-  { label: 'Photography', description: 'Nam reformidans vituper atori bus at. Id nisl diceret maiestatis qui, mel affert doctus te.', icon: 'icon-basic-photo' },
-  { label: 'Coding', description: 'Nam reformidans vituper atori bus at. Id nisl diceret maiestatis qui, mel affert doctus te.', icon: 'icon-basic-keyboard' },
-  { label: 'WordPress', description: 'Nam reformidans vituper atori bus at. Id nisl diceret maiestatis qui, mel affert doctus te.', icon: 'icon-basic-keyboard' },
+  { label: 'Coding', description: 'I will provide, clean, effecient, documented, well tested, designed for scale codes', icon: 'ion-code-working' },
+  { label: 'Design', description: 'I will provde vissualy appealing, responsive designs with mobile first design in mind', icon: 'ion-paintbrush' },
+  { label: 'DevOps', description: 'I will help architect an infrastructure with top of the industry tools and best practic', icon: 'ion-hammer' },
 ]
 
 function Services() {
@@ -12,7 +12,7 @@ function Services() {
     <div className="col-md-4" key={index}>
 
       <div className="service">
-        <i className={service.icon}></i>
+        <i className={service.icon} />
         <h4>{service.label}</h4>
         <p>
           {service.description}

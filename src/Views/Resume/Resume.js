@@ -5,15 +5,14 @@ import Testimonials from './Testimonial'
 import './Resume.scss';
 
 const EDUCATIONS = [
-  { name: 'CSS College', degree: 'Masters', year: '2014 to 2016', description: 'Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed.' },
-  { name: 'CSS College', degree: 'Masters', year: '2014 to 2016', description: 'Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed.' },
-  { name: 'CSS College', degree: 'Masters', year: '2014 to 2016', description: 'Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed.' }
+  { name: 'NYU Tandon', degree: 'B.Sc Computer Science', year: '2010 to 2014', description: 'At NYU Tandon, I studied computer science with main focus in Web Development and minor focus in computer security.' },
 ];
 
 const EXPERIENCES = [
-  { name: 'CSS College', degree: 'Masters', year: '2014 to 2016', description: 'Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed.' },
-  { name: 'CSS College', degree: 'Masters', year: '2014 to 2016', description: 'Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed.' },
-  { name: 'CSS College', degree: 'Masters', year: '2014 to 2016', description: 'Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed.' },
+  { name: 'CommonBond', degree: 'Sr. Software Engineer', year: 'Jul 2019 - Present', description: 'Designed, developed, and deployed microservices. Build features for A/B testing.' },
+  { name: 'CommonBond', degree: 'Software Engineer', year: 'Jan 2018 to Jul 2019', description: 'Developed in house lending platform for current and incoming students to take out student loan.' },
+  { name: 'Revintu', degree: 'Software Engineer', year: 'Mar 2017 to Dec 2017', description: 'Built pager system for customer service. Maintained online billing and collection tools.' },
+  { name: 'MedPilot', degree: 'Co-Founder', year: 'Aug 2014 to Mar 2017', description: 'Designed and Devloped UI & UX, Frotned and Backend of online medical bill repayment system.' },
 ];
 
 const TESTIMONIALS = [

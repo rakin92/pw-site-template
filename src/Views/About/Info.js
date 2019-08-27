@@ -1,10 +1,10 @@
 import React from "react";
 
 const DETAILS = [
-  { key: 'Name', value: 'John Doe' },
-  { key: 'Job', value: 'Freelancer' },
-  { key: 'Age', value: '25' },
-  { key: 'Hometown', value: 'Dokri' },
+  { key: 'Name', value: 'Rakin' },
+  { key: 'Job', value: 'Engineer' },
+  { key: 'Age', value: '27' },
+  { key: 'Hometown', value: 'NIC' },
 ]
 
 function Pricing() {
@@ -21,7 +21,7 @@ function Pricing() {
           
       <div className="section-header">
         <h2>About Me</h2>
-        <p>I"m a good guy, not a bad guy</p>
+        <p>I'm a full-stack software engineer</p>
       </div>
       
       <div className="row">

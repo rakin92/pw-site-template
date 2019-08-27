@@ -8,6 +8,8 @@ $color_4: #F44336;
 =================================================================================*/
 
 .contact-info {
+  align-items: center;
+  display: flex;
   position: relative;
   margin-bottom: 25px;
   &:before {
@@ -22,7 +24,7 @@ $color_4: #F44336;
   > {
     i {
       font-size: 48px;
-      width: 60px;
+      padding-right: 22px;
       float: left;
       color: $color_4;
     }
@@ -38,8 +40,7 @@ $color_4: #F44336;
     a {
       color: $color_4;
       float: left;
-      font-size: 16px;
-      margin-top: 18px;
+      font-size: .8rem;
       margin-bottom: 0;
       font-weight: 500;
       line-height: 1.8em;

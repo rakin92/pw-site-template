@@ -1,9 +1,9 @@
 import React from "react";
 
 const PRICES = [
-	{ label: 'Basic', cost: 20, items: ['Web Designing', 'Web Development', 'App Development'] },
-	{ label: 'Basic', cost: 20, items: ['Web Designing', 'Web Development', 'App Development'] },
-	{ label: 'Basic', cost: 20, items: ['Web Designing', 'Web Development', 'App Development'] },
+	{ label: 'Frontend', cost: 20, items: ['HTML & CSS', 'JavaScript ES6', 'ReactJS'], icon: 'ion-hammer' },
+	{ label: 'Backend', cost: 20, items: ['GoLang', 'Pyhon & Django', 'Postgres SQL'], icon: 'ion-hammer' },
+	{ label: 'DevOps', cost: 20, items: ['Docker', 'Kubernetes', 'Git'], icon: 'ion-hammer' },
 ]
 
 function Pricing() {
@@ -16,9 +16,9 @@ function Pricing() {
 				<div className="header">
 					<h4>{price.label}</h4>
 					<div className="price">
-						<span className="currency">$</span>
-						<span className="amount">{price.cost}</span>
-						<span className="period">/hr</span>
+						{/* <span className="currency">$</span> */}
+					  <span className="amount"><i className={price.icon} /></span>
+						{/* <span className="period">/hr</span> */}
 					</div>
 				</div>
 
@@ -30,7 +30,7 @@ function Pricing() {
 					))}
 				</ul>
 
-				<a href={`#price-${index}`} className="btn-material">Sign Up</a>
+				<a href={`#price-${index}`} className="btn-material">More</a>
 			</div>
 
 		</div>
@@ -40,8 +40,8 @@ function Pricing() {
     <div className="block pricing-block">
           
 			<div className="section-header">
-				<h2>Pricing</h2>
-				<p>I provide different packages for my services</p>
+				<h2>Tools</h2>
+				<p>I am most effecient with the following tools</p>
 			</div>
 			
 			<div className="row">
