@@ -28,7 +28,7 @@ function Home() {
 
                 <div className="intro-btns">
                   <a href="#contact" className="btn-material section-toggle" data-section="contact">
-                    Hire Me
+                    Work With Me
                   </a>
                   <a href="#resume" className="btn-material btn-secondary">
                     Download Resume

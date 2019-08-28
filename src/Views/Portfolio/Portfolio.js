@@ -17,8 +17,8 @@ const PROJECTS = [
   { id: 1, title: 'Go & GQL', description: 'A simple starter api service built with GoLang, GraphQL (gqlgen), GORM, and Gin.', image: golangImg, type: ['GO'], github: 'https://github.com/rakin92/go-gql-starter' },
   { id: 2, title: 'AWS SAM CLI', description: 'An AWS Lambda starter kit to handle aws events built with sam-cli in go.', image: lambdaImg, type: ['GO'], github: 'https://github.com/rakin92/go-sam-lambda-starter' },
   { id: 3, title: 'Cucumber BDT', description: 'A Bevior Driven Testing starter kit built with cucumber, python and selinium.', image: pythonImg, type: ['PYTHON'], github: 'https://github.com/rakin92/python-cucumber-bdt' },
-  { id: 4, title: 'Docker Samples', description: 'Some quick docker samples for your everyday projects started.', image: dockerImg, type: ['DEVOPS', 'GO', 'JS'], github: 'https://github.com/rakin92/python-cucumber-bdt' },
-  { id: 6, title: 'Kubernetes Samples', description: 'Some quick kubernetes samples get your projects out to production.', image: kubeImg, type: ['DEVOPS'], github: 'https://github.com/rakin92/python-cucumber-bdt' },
+  { id: 4, title: 'Docker Starter', description: 'Some quick docker samples for your everyday projects started.', image: dockerImg, type: ['DEVOPS', 'GO', 'JS'], github: 'https://github.com/rakin92/docker-starter' },
+  { id: 6, title: 'Kubernetes Starter', description: 'Some quick kubernetes samples get your projects out to production.', image: kubeImg, type: ['DEVOPS'], github: 'https://github.com/rakin92/kube-starter' },
 ];
 
 class Portfolio extends React.PureComponent {

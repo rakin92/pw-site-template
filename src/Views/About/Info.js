@@ -2,9 +2,9 @@ import React from "react";
 
 const DETAILS = [
   { key: 'Name', value: 'Rakin' },
-  { key: 'Job', value: 'Engineer' },
+  { key: 'Job', value: 'Software Engineer' },
   { key: 'Age', value: '27' },
-  { key: 'Hometown', value: 'NIC' },
+  { key: 'Hometown', value: 'NYC' },
 ]
 
 function Pricing() {
