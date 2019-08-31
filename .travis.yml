@@ -6,8 +6,7 @@ cache:
   directories:
     - node_modules
 script:
+  - yarn test
   - yarn build
-deploy:
-  - yarn deploy
 on:
   branch: master
