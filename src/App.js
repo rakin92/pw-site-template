@@ -11,22 +11,12 @@ import Portfolio from './Views/Portfolio/Portfolio';
 import About from './Views/About/About';
 import Resume from './Views/Resume/Resume';
 
-let deferredPrompt;
+
 export class App extends React.PureComponent {
   state = {
     menuStatus: 'hide',
     active: 'home',
   };
-
-  componentDidMount = () => {
-    window.addEventListener('beforeinstallprompt', (e) => {
-      // Stash the event so it can be triggered later.
-      deferredPrompt = e;
-      // Update UI notify the user they can add to home screen
-      console.log('ADD TO HOME SCREE');
-
-    });
-  }
 
   toggleMenu = () => {
     const { menuStatus } = this.state;
