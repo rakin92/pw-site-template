@@ -1,4 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## PWA React App
+[![Build Status](https://travis-ci.org/rakin92/pwa-react-app.svg?branch=master)](https://travis-ci.org/rakin92/pwa-react-app)
+[![Node 10](https://img.shields.io/badge/npm-10.16.3-green.svg)](https://nodejs.org/en/download/)
+
+This is my own personal website, and my first take on PWA concept. I decided to port my existing website which was built with react, and turn it into a progressive we app. Learn more about progressive web app [here](https://developers.google.com/web/progressive-web-apps/).
+
+## Stack
+* Framework : [React JS](https://reactjs.org/)
+* Service Worker: [Workbox](https://developers.google.com/web/tools/workbox/guides/get-started)
+* Hosting: [Firebase](https://firebase.google.com/docs/hosting)
 
 ## Available Scripts
 
@@ -30,10 +39,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `yarn run build-sw`
 
 Builds the service worker for the application.
-
-### `yarn run start-sw`
-
-Serves the production ready build with pwa through http-server.
 
 ### `yarn run eject`
 
