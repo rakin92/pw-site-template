@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rakin92.github.io/pwa-react-app/",
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -12,7 +13,8 @@
     "start": "react-scripts start",
     "build-sw": "node ./src/sw-build.js",
     "build": "react-scripts build && yarn run build-sw",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -30,6 +32,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.2.0",
     "workbox-build": "^4.3.1",
