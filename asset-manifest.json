@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/pwa-react-app/static/css/main.4933c57a.chunk.css",
+    "main.js": "/pwa-react-app/static/js/main.6fe8e8a0.chunk.js",
+    "main.js.map": "/pwa-react-app/static/js/main.6fe8e8a0.chunk.js.map",
+    "runtime~main.js": "/pwa-react-app/static/js/runtime~main.a28bc127.js",
+    "runtime~main.js.map": "/pwa-react-app/static/js/runtime~main.a28bc127.js.map",
+    "static/js/2.fdf2a009.chunk.js": "/pwa-react-app/static/js/2.fdf2a009.chunk.js",
+    "static/js/2.fdf2a009.chunk.js.map": "/pwa-react-app/static/js/2.fdf2a009.chunk.js.map",
+    "index.html": "/pwa-react-app/index.html",
+    "precache-manifest.d632e653297bd507b4ad4ad56cb0b7d6.js": "/pwa-react-app/precache-manifest.d632e653297bd507b4ad4ad56cb0b7d6.js",
+    "service-worker.js": "/pwa-react-app/service-worker.js",
+    "static/css/main.4933c57a.chunk.css.map": "/pwa-react-app/static/css/main.4933c57a.chunk.css.map",
+    "static/media/1.jpg": "/pwa-react-app/static/media/1.c2d44d48.jpg",
+    "static/media/awslambda.jpg": "/pwa-react-app/static/media/awslambda.9d276060.jpg",
+    "static/media/docker.jpg": "/pwa-react-app/static/media/docker.da5a32b9.jpg",
+    "static/media/golang.jpg": "/pwa-react-app/static/media/golang.9adff21f.jpg",
+    "static/media/Main.scss": "/pwa-react-app/static/media/linea.e53bb66c.eot",
+    "static/media/kube.jpg": "/pwa-react-app/static/media/kube.bc3fb3ba.jpg",
+    "static/media/python.jpg": "/pwa-react-app/static/media/python.2da521be.jpg",
+    "static/media/reactjs.jpg": "/pwa-react-app/static/media/reactjs.74ba0b09.jpg"
+  }
+}
