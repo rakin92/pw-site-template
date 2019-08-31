@@ -26,7 +26,7 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn run build`
+### `yarn build`
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance. Also builds the service worker.
@@ -36,9 +36,10 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn run build-sw`
 
-Builds the service worker for the application.
+### `yarn deploy`
+
+This will deploy the page to desired github page. *You will need to setup your github repository and need to build the project first before running this command. You will also need to update the homepage url inside the package.json file*
 
 ### `yarn run eject`
 
