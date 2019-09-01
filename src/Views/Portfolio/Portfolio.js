@@ -13,12 +13,16 @@ import './Portfolio.scss';
 
 
 const PROJECTS = [
-  { id: 0, title: 'Weather App', description: 'A simple weather app built using Open Weather Map api and javascript.', image: reactjsImg, type: ['JS'], github: 'https://github.com/rakin92/weatherapp' },
-  { id: 1, title: 'Go & GQL', description: 'A simple starter api service built with GoLang, GraphQL (gqlgen), GORM, and Gin.', image: golangImg, type: ['GO'], github: 'https://github.com/rakin92/go-gql-starter' },
+  { id: 0, title: 'Progressive React App', description: 'Its the source code to this progressive web app. Built with JS, ReactJS, and Workbox.', image: reactjsImg, type: ['JS'], github: 'https://github.com/rakin92/pwa-react-app', demo: 'https://rakin92.github.io/pwa-react-app/' },
+  { id: 1, title: 'Go & GQL', description: 'A simple starter api service built with GoLang, GraphQL (go-graphql), Postgres and GORM. It supports JWT authentication.', image: golangImg, type: ['GO'], github: 'https://github.com/rakin92/go-gql-starter' },
   { id: 2, title: 'AWS SAM CLI', description: 'An AWS Lambda starter kit to handle aws events built with sam-cli in go.', image: lambdaImg, type: ['GO'], github: 'https://github.com/rakin92/go-sam-lambda-starter' },
-  { id: 3, title: 'Cucumber BDT', description: 'A Bevior Driven Testing starter kit built with cucumber, python and selinium.', image: pythonImg, type: ['PYTHON'], github: 'https://github.com/rakin92/python-cucumber-bdt' },
+  { id: 3, title: 'Pyhon BDD', description: 'A Bevior Driven Testing starter kit built with behave, python and selinium.', image: pythonImg, type: ['PYTHON'], github: 'https://github.com/rakin92/python-cucumber-bdt' },
   { id: 4, title: 'Docker Starter', description: 'Some quick docker samples for your everyday projects started.', image: dockerImg, type: ['DEVOPS', 'GO', 'JS'], github: 'https://github.com/rakin92/docker-starter' },
-  { id: 6, title: 'Kubernetes Starter', description: 'Some quick kubernetes samples get your projects out to production.', image: kubeImg, type: ['DEVOPS'], github: 'https://github.com/rakin92/kube-starter' },
+  { id: 5, title: 'Kubernetes Starter', description: 'Some quick kubernetes samples get your projects out to production.', image: kubeImg, type: ['DEVOPS'], github: 'https://github.com/rakin92/kube-starter' },
+  // { id: 6, title: 'Weather App', description: 'A simple weather app built using Open Weather Map api and javascript.', image: reactjsImg, type: ['JS'], github: 'https://github.com/rakin92/weatherapp' },
+  { id: 6, title: 'Apollo React Starter', description: 'Simple Apollo React start kit to provide you with quick setup with your graphql & restful service.', image: reactjsImg, type: ['JS'], github: 'https://github.com/rakin92/apollo-react-starter', demo: 'https://rakin92.github.io/pwa-react-app/' },
+  { id: 7, title: 'GoLang BDD', description: 'A Bevior Driven Testing starter kit built with go, and godog by DATA-DOG.', image: golangImg, type: ['GO'], github: 'https://github.com/rakin92/go-bdd-starter' },
+  { id: 8, title: 'Progressive Web AMP', description: 'This is a progressive web amp for my blog pages.', image: reactjsImg, type: ['JS'], github: 'https://github.com/rakin92/pw-amp-blog-starter', demo: 'https://rakin-blog.firebaseapp.com/' },
 ];
 
 class Portfolio extends React.PureComponent {
