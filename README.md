@@ -66,7 +66,7 @@ Run service
 docker run IMAGE_NAME
 ```
 
-Once up and running you can access using localhost:3000
+Once up and running you can access using [http://localhost:3000](http://localhost:3000)
 
 
 ## Firebase deploy
