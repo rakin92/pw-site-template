@@ -1,9 +1,9 @@
 import React from "react";
 
 const PRICES = [
-	{ label: 'Frontend', cost: 20, items: ['HTML & CSS', 'JavaScript ES6', 'ReactJS'], icon: 'ion-hammer' },
-	{ label: 'Backend', cost: 20, items: ['GoLang', 'Pyhon & Django', 'Postgres SQL'], icon: 'ion-hammer' },
-	{ label: 'DevOps', cost: 20, items: ['Docker', 'Kubernetes', 'Git'], icon: 'ion-hammer' },
+	{ label: 'Frontend', cost: 20, items: ['HTML & CSS', 'JavaScript ES6', 'ReactJS'], icon: 'ion-social-html5-outline' },
+	{ label: 'Backend', cost: 20, items: ['GoLang', 'Pyhon & Django', 'Postgres SQL'], icon: 'ion-social-python' },
+	{ label: 'DevOps', cost: 20, items: ['Docker', 'Kubernetes', 'Git'], icon: 'ion-social-github' },
 ]
 
 function Pricing() {

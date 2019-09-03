@@ -3,7 +3,7 @@ import React from "react";
 const SERVICES = [
   { label: 'Coding', description: 'I will provide, clean, effecient, documented, well tested, designed for scale codes', icon: 'ion-code-working' },
   { label: 'Design', description: 'I will provde vissualy appealing, responsive designs with mobile first design in mind', icon: 'ion-paintbrush' },
-  { label: 'DevOps', description: 'I will help architect an infrastructure with top of the industry tools and best practic', icon: 'ion-hammer' },
+  { label: 'DevOps', description: 'I will help architect an infrastructure with top of the industry tools and best practic', icon: 'ion-settings' },
 ]
 
 function Services() {

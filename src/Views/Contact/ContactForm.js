@@ -15,6 +15,7 @@ const ContactForm = () => {
   }
   const handleSubmit = (event) => {
     if (event) event.preventDefault();
+    alert('Not setup currently! Sorry. You can email my gmail: rakin92')
   }
 
   return (

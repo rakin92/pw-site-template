@@ -36,10 +36,10 @@ function Pricing() {
         
           <div className="about-text">
             <p>
-              Consul latine iudicabit eu vel. Cu has animal eru volupta tibus. Eu volumus explicari sed. Mel mutat vitupata susci piantur et, et fabellas explicari adipiscing quo. No dol em blandit theophrastus eos, nam eu per secuti repu dadae, duo hinc vide aliquip et. An has alterum nominavi. Nam at elitr veritus voluptaria. Cu eum regione tacimates vituperatoribus
+              As an engineer I enjoy problem solving, working on new products and features. Building things with cutting edge technology, with effeciency, and good practices in mind. I have co-founded a compny in the past, from which I gaind a lot of experience and the understand value of time and building things fast, but with good practices in mind.
             </p>
             <p>
-              Consul latine iudicabit eu vel. Cu has animal eru volupta tibus. Eu volumus explicari sed. Mel mutat vitupata susci piantur et, et fabellas explicari adipiscing quo. No dol em blandit theophrastus eos, nam eu per secuti repu dadae, duo hinc vide aliquip et.
+              When not writing code, I enjoy traveling, hiking, playing soccer or basketball, exploring new resturants and bars, and people watching.
             </p>
           </div>
           
