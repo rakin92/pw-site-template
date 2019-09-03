@@ -3,7 +3,7 @@ import React from 'react';
 import Person from './person.png';
 import './Home.scss';
 
-function Home() {
+function Home({ redirect }) {
   return (
     <section id="home" className="section main-section active">
       <div className="row">
@@ -27,7 +27,7 @@ function Home() {
                 </p>
 
                 <div className="intro-btns">
-                  <a href="#contact" className="btn-material section-toggle" data-section="contact">
+                  <a href="#contact" className="btn-material section-toggle" onClick={() => redirect('contact')}>
                     Work With Me
                   </a>
                   <a href="#resume" className="btn-material btn-secondary">

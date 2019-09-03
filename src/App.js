@@ -2,7 +2,7 @@ import React from 'react';
 
 import Nav from './Component/Menu/Menu';
 import MenuButton from './Component/MenuButton/MenuButton';
-import './styles/Main.scss';
+import './Styles/Main.scss';
 
 import Home from './Views/Home/Home';
 import Blog from './Views/Blog/Blog';
@@ -29,7 +29,7 @@ export class App extends React.PureComponent {
 
     switch (active) {
       case 'home':
-        return <Home />
+        return <Home redirect={this.navigateTo}/>
       case 'about':
         return <About />
       case 'resume':

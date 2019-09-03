@@ -8,9 +8,9 @@ class Blog extends React.PureComponent {
 
   state = {
     blogs: [
-      { id: 0, title: 'Some Title', banner: Image1, author: 'Rakin', date: '14 June', tags: 'Web, Api', summary: 'some reall good summary of the blog' },
-      { id: 1, title: 'Some Title', banner: Image1, author: 'Rakin', date: '14 June', tags: 'Web, Api', summary: 'some reall good summary of the blog' },
-      { id: 2, title: 'Some Title', banner: Image1, author: 'Rakin', date: '14 June', tags: 'Web, Api', summary: 'some reall good summary of the blog' },
+      { id: 0, title: 'Golden Hours', banner: Image1, author: 'Rakin', date: '20 Sept', tags: 'Travel', summary: 'A sample of my favorite golden hours.', url: 'https://rakin-blog.firebaseapp.com/goldehnhour.html' },
+      { id: 1, title: 'Coding Problems', banner: Image1, author: 'Rakin', date: '20 Sept', tags: 'Educational', summary: 'Collection of commonly asked coding problems.', url: 'https://rakin-blog.firebaseapp.com/coding.html' },
+      { id: 2, title: 'Working Title', banner: Image1, author: 'Rakin', date: '20 Sept', tags: 'Shorts', summary: 'A personal project I am working on, comign soon...', url: 'https://rakin-blog.firebaseapp.com/comingsoon.html' },
     ]
   };
 
@@ -29,7 +29,7 @@ class Blog extends React.PureComponent {
 
             <div className="section-header">
               <h2>My Blog</h2>
-              <p>Take a look at my most recent posts</p>
+              <p>Take a look at my most recent posts, and some of my favorite reads.</p>
             </div>
             
             <BlogPreview blogsList={blogs} blogToggle={this.blogToggle}/>

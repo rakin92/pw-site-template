@@ -36,7 +36,7 @@ function BlogPreview({ blogsList, blogToggle }) {
             {blog.summary}
           </p>
 
-          <a href={`#blog-preview-${blog.id}`} className="read-more" onClick={() => blogToggle(blog.id)}>
+          <a href={blog.url} className="read-more" onClick={() => blogToggle(blog.id)}>
             Read More
             <i className="ion-ios-arrow-thin-right"></i>
           </a>
